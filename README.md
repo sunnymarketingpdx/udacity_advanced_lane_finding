@@ -116,11 +116,13 @@ Since this is a big section, I break down to the following steps:
   - Enhance polynomial curve 
 
 Histogram 
+
 ![screen shot 2017-03-15 at 2 05 38 am](https://cloud.githubusercontent.com/assets/11469505/23940990/401ec58e-0924-11e7-883b-e231faa6375a.png)
 
 
 
 Plot visualization
+
 ![screen shot 2017-03-15 at 2 05 46 am](https://cloud.githubusercontent.com/assets/11469505/23940994/4563cf62-0924-11e7-9a79-962b87594e38.png)
 
 

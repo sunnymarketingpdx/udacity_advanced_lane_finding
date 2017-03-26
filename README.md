@@ -74,6 +74,13 @@ Part 3: Warp Images
 
 After many tries, I used the following approach to warp the image: 
 
+src = np.float32([ [540, 450], [720, 450], [1280, 720], [0, 720] ])
+img_size = [1280, 720]
+dst = np.float32([ [100,0], [img_size[0]-100, 0], 
+    [img_size[0]-100,img_size[1]], [100,img_size[1]] ])
+    
+Another option is: 
+
 src = np.float32(
     [[(img_size[0] / 2) - 55, img_size[1] / 2 + 100],
     [((img_size[0] / 6) + 15), img_size[1]],
@@ -140,9 +147,7 @@ Video project_video_output_mar15_2 is submitted along with Jupyter notebook.
 
 Discussion: 
 
-1. This is my 4th submission of this project. It's challenging to make the perfect pipeline for video output. After many trials and errors, I finally figured out the solution.
+1. When I was taking Udacity class, it's pretty challenging to understand the steps to calculate the radius of curvature. I read many blog posts, viewed insights in Slack channel and finally got the solution. 
 
-2. When I was taking Udacity class, it's pretty challenging to understand the steps to calculate the radius of curvature. I read many blog posts, viewed insights in Slack channel and finally got the solution. 
-
-3. The pipeline will not work if the pixel detection is bad. I tested it with harder challenge video and it didn't perform too well (Therefore I didn't include it in the Jupyter notebook). Edge detection may have too much false positives (such as shadows). Compute the skelelon on edges masks will be a good start. 
+2. The pipeline will not work if the pixel detection is bad. I tested it with harder challenge video and it didn't perform too well (Therefore I didn't include it in the Jupyter notebook). Edge detection may have too much false positives (such as shadows). Compute the skelelon on edges masks will be a good start. 
 

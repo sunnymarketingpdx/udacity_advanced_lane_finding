@@ -134,6 +134,7 @@ To generate sample picture with clear lane detection, here are the steps:
 3. Use inverse perspective matrix, combine with original image
 
 Lane area sample image
+
 ![screen shot 2017-03-12 at 7 18 41 pm](https://cloud.githubusercontent.com/assets/11469505/23839091/bfa4c970-0758-11e7-89e4-01582244957f.png)
 
 Here are the steps I took to calculate the radius of curvature of the lane and the position of the vehicle with respect to center:
